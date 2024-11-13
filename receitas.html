@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site de Receitas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffcf9f;
+      }
+
+      .navbar {
+        background-color: #ff4e0d;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .navbar h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .search-bar {
+        margin-top: 10px;
+      }
+
+      .search-bar input[type="text"] {
+        padding: 8px;
+        width: 60%;
+        max-width: 300px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      .recipe-container {
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .recipe-container img {
+        width: 250px;
+        height: 150px;
+        display: block;
+        margin: 0 auto 15px auto;
+        border-radius: 8px;
+      }
+
+      .recipe-container h1 {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        margin: 0;
+      }
+
+      .recipe-container p {
+        font-size: 16px;
+        color: #666;
+        text-align: center;
+      }
+
+      .steps {
+        color: #000000;
+        margin-top: 10px;
+        text-align: justify;
+      }
+
+      footer {
+        font-style: italic;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        background-color: #ff4e0d;
+        padding: 30px;
+      }
+
+      div.box-video {
+        background-color: #ff4e0d;
+        padding: 5px 5px 0px 5px;
+        position: relative;
+        padding-bottom: 56%;
+        border-radius: 12px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+
+      div.box-video > iframe {
+        position: absolute;
+        top: 3.4%;
+        left: 3.5%;
+        width: 93%;
+        height: 93%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>LUSS Receitas</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar receitas..." />
+      </div>
+    </div>
+
+    <div class="recipe-container">
+      <img src="images/feijoada.png" alt="Imagem da Receita" />
+      <h1>FEIJOADA</h1>
+      <p>
+        Tradicional ensopado de feijão preto com carnes suínas, servido com
+        arroz, farofa e couve.
+      </p>
+      <ul type="square">
+        (INGREDIENTES:)
+        <li>Feijão preto</li>
+        <li>Carne de porco (costelinha, linguiça, paio)</li>
+        <li>Carne seca</li>
+        <li>Alho</li>
+        <li>Louro</li>
+      </ul>
+      <h2>Passo a passo:</h2>
+      <ol>
+        <li class="steps">
+          <strong>Prepare as Carnes:</strong> Dessalgue as carnes salgadas (como
+          carne seca e costelinha) deixando-as de molho em água por várias
+          horas, trocando a água de tempos em tempos.
+        </li>
+        <li class="steps">
+          <strong>Cozinhe o Feijão:</strong> Cozinhe o feijão preto em uma
+          panela grande com água e algumas folhas de louro até ele começar a
+          amolecer.
+        </li>
+        <li class="steps">
+          <strong>Cozinhe as Carnes:</strong> Adicione as carnes dessalgadas e
+          os cortes de porco ao feijão. Cozinhe em fogo médio até que tudo fique
+          bem macio.
+        </li>
+        <li class="steps">
+          <strong>Refogue os Temperos:</strong> Em uma frigideira à parte,
+          refogue cebola e alho no óleo ou azeite e adicione essa mistura à
+          feijoada.
+        </li>
+        <li class="steps">
+          <strong>Ajuste os Sabores:</strong> Tempere com sal e pimenta, se
+          necessário, e deixe cozinhar até que os sabores estejam bem
+          incorporados.
+        </li>
+      </ol>
+      <p>Aqui está um video do canal [canal] que pode te ajudar:</p>
+      <div class="box-video">
+        <iframe
+          width="480"
+          height="260"
+          src="https://www.youtube.com/embed/dlIfc5adZKc"
+          title="Como Fazer a Feijoada Perfeita (10 DICAS) I Churrasqueadas"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="recipe-container">
+      <img src="images/moqueca.png" alt="Imagem da Receita" />
+      <h1>MOQUECA</h1>
+      <p>
+        Ensopado de peixe com leite de coco e azeite de dendê, típico do
+        nordeste brasileiro.
+      </p>
+      <ul type="square">
+        (INGREDIENTES:)
+        <li>Peixe branco</li>
+        <li>Leite de coco</li>
+        <li>Pimentão (verde, amarelo e vermelho)</li>
+        <li>Tomate</li>
+        <li>Cebola</li>
+        <li>Coentro</li>
+        <li>Azeite de dendê</li>
+      </ul>
+    </div>
+
+    <div class="recipe-container">
+      <img src="images/brigadeiro.png" alt="Imagem da Receita" />
+      <h1>Brigadeiro</h1>
+      <p>
+        Doce de chocolate feito com leite condensado, enrolado e coberto com
+        granulado.
+      </p>
+      <ul type="square">
+        (INGREDIENTES:)
+        <li>Leite condensado</li>
+        <li>Chocolate em pó</li>
+        <li>Carne seca</li>
+        <li>Manteiga</li>
+        <li>Granulado de chocolate</li>
+      </ul>
+    </div>
+    <div class="recipe-container">
+      <img src="images/coxinha.png" alt="Imagem da Receita" />
+      <h1>Coxinha</h1>
+      <p>
+        Salgado frito de massa recheada com frango desfiado e catupiry, em
+        formato de coxinha.
+      </p>
+      <ul type="square">
+        (INGREDIENTES:)
+        <li>Frango desfiado</li>
+        <li>Caldo de galinha</li>
+        <li>Farinha de trigo</li>
+        <li>Cebola</li>
+        <li>Alho</li>
+        <li>Catupiry (opcional)</li>
+        <li>Farinha de rosca para empanar</li>
+      </ul>
+    </div>
+    <div class="recipe-container">
+      <img src="images/acaraje.png" alt="Imagem da Receita" />
+      <h1>Acarajé</h1>
+      <p>
+        Bolinho de feijão-fradinho frito no azeite de dendê, recheado com vatapá
+        e camarão
+      </p>
+      <ul type="square">
+        (INGREDIENTES:)
+        <li>Feijão-fradinho</li>
+        <li>Cebola</li>
+        <li>Azeite de dendê</li>
+        <li>Camarão seco</li>
+        <li>Vatapá (acompanhamento)</li>
+      </ul>
+    </div>
+    <div class="recipe-container">
+      <img src="images/paodequeijo.png" alt="Imagem da Receita" />
+      <h1>Pão de Queijo</h1>
+      <p>Bolinho assado de polvilho e queijo, popular em Minas Gerais.</p>
+      <ul type="square">
+        (INGREDIENTES:)
+        <li>Polvilho azedo (ou polvilho doce)</li>
+        <li>Queijo minas</li>
+        <li>Ovos</li>
+        <li>Leite</li>
+        <li>Manteiga ou óleo</li>
+      </ul>
+    </div>
+    <div class="recipe-container">
+      <img src="images/pastel.png" alt="Imagem da Receita" />
+      <h1>Pastel</h1>
+      <p>
+        Massa frita e crocante com recheios variados, geralmente vendido em
+        feiras.
+      </p>
+      <ul type="square">
+        (INGREDIENTES:)
+        <li>Massa de pastel</li>
+        <li>Recheio (carne, queijo, frango, palmito, etc.)</li>
+        <li>Óleo para fritura</li>
+      </ul>
+    </div>
+    <div class="recipe-container">
+      <img src="images/canjica.png" alt="Imagem da Receita" />
+      <h1>Canjica</h1>
+      <p>
+        Doce cremoso de milho branco cozido com leite e açúcar, polvilhado com
+        canela.
+      </p>
+      <ul type="square">
+        (INGREDIENTES:)
+        <li>Milho branco</li>
+        <li>Leite</li>
+        <li>Leite de coco</li>
+        <li>Açúcar</li>
+        <li>Canela em pau</li>
+      </ul>
+    </div>
+    <footer>Site desenvolvido pelo Grupo 8</footer>
+  </body>
+</html>
